@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: helloworld-ui
 spec:
-  replicas: 1
+  replicas: 3
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
         app: helloworld-ui
     spec:
       containers:
-      - image: ryuisanggo/myhelloworld 
+      - image: ryuisanggo/myhelloworld:latest
         name: helloworld-ui
         ports:
         - containerPort: 5000
