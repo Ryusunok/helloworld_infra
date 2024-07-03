@@ -9,6 +9,6 @@ spec:
     app: helloworld-ui
   ports:
     - protocol: TCP
-      port: 84
+      port: 8001
       targetPort: 5000
       nodePort: 32767 
